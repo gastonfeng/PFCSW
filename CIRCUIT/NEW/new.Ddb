@@ -1,0 +1,34 @@
+[Design Root]
+Version=1.0.0
+[Directory]
+main.Sch=Sch
+Pfc.sch=Sch
+3525.SCH=Sch
+buck.sch=Sch
+Ups.pcb=PCB
+Ups1.pcb=PCB
+TL431_SIM.Sch=Sch
+filter.LIB=PCBLib
+[main.Sch]
+Editor Kind=Sch
+Attributes=131072
+[Pfc.sch]
+Editor Kind=Sch
+[3525.SCH]
+Editor Kind=Sch
+[buck.sch]
+Editor Kind=Sch
+[Ups.pcb]
+Editor Kind=PCB
+[Ups1.pcb]
+Editor Kind=PCB
+
+[main.Sch Childlist]
+ChildCount=3
+Child1=PFC.SCH
+Child2=3525.SCH
+Child3=buck.sch
+[TL431_SIM.Sch]
+Editor Kind=Sch
+[filter.LIB]
+Editor Kind=PCBLib

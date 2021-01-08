@@ -1,0 +1,71 @@
+[Design Root]
+Version=1.0.0
+
+[Directory]
+buck.SCH=Sch
+Dcc.sch=Sch
+main.Sch=Sch
+Pfc.sch=Sch
+buck&3525.SCH=Sch
+Ups.pcb=PCB
+main.lib=SchLib
+Ups.lib=PCBLib
+old1.pcb=PCB
+Copy of Ups.pcb=PCB
+buck sim.Sch=Sch
+buck sim.sdf=SimData
+Boost sim.Sch=Sch
+Boost sim.sdf=SimData
+Boost sim.cfg=Text
+buck sim.cfg=Text
+
+[buck.SCH]
+Editor Kind=Sch
+
+[Dcc.sch]
+Editor Kind=Sch
+
+[main.Sch]
+Editor Kind=Sch
+Attributes=131072
+
+[Pfc.sch]
+Editor Kind=Sch
+
+[buck&3525.SCH]
+Editor Kind=Sch
+
+[Ups.pcb]
+Editor Kind=PCB
+
+[main.lib]
+Editor Kind=SchLib
+
+[Ups.lib]
+Editor Kind=PCBLib
+Description=Ups.lib
+
+[old1.pcb]
+Editor Kind=PCB
+
+[Copy of Ups.pcb]
+Editor Kind=PCB
+
+[main.Sch Childlist]
+ChildCount=2
+Child1=PFC.SCH
+Child2=buck&3525.SCH
+
+
+[buck sim.Sch]
+Editor Kind=Sch
+[buck sim.sdf]
+Editor Kind=SimData
+[Boost sim.Sch]
+Editor Kind=Sch
+[Boost sim.sdf]
+Editor Kind=SimData
+[Boost sim.cfg]
+Editor Kind=Text
+[buck sim.cfg]
+Editor Kind=Text

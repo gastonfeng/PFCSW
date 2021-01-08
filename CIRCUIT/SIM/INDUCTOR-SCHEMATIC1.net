@@ -1,0 +1,7 @@
+* source INDUCTOR
+V_V1         N00013 0  
++PULSE 0 42.75V 0 0.1us 0.1us 4.2us 10us
+X_D1         N00013 0 N00424 MBR3045PT
+L_L1         N00424 N00024  400uH  
+C_C1         N00024 0  100u  
+R_R1         0 N00024  100  

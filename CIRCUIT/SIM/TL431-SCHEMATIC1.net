@@ -1,0 +1,10 @@
+* source TL431
+X_U1         N00099 N00096 0 N00070 0 A4N25 PARAMS: rel_CTR=1
+R_R2         N00102 N00099  1.5k  
+R_R1         N00060 N00102  1.2k  
+R_R4         N00118 N00028  9.1k  
+R_R5         0 N00118  2k  
+R_R3         N00060 N00070  6.2k  
+V_V2         N00028 0 18Vdc
+V_V1         N00060 0 7.5Vdc
+C_C1         0 N00102  4.7u  

@@ -1,0 +1,18 @@
+** circuit file for profile: trans 
+
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT PROFILES
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of pspice91.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ms 0 
+.PROBE 
+.INC "inductor-SCHEMATIC1.net" 
+
+.INC "inductor-SCHEMATIC1.als"
+
+
+.END

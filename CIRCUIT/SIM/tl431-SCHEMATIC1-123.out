@@ -1,0 +1,148 @@
+
+**** 12/28/01 23:44:26 ********* PSpice 9.1 (Mar 1999) ******** ID# 0 ********
+
+ ** circuit file for profile: 123 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT PROFILES
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of pspice91.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V2 10 21 0.1 
+.PROBE 
+.INC "tl431-SCHEMATIC1.net" 
+
+
+**** INCLUDING tl431-SCHEMATIC1.net ****
+* source TL431
+X_U1         N00099 N00096 0 N00070 0 A4N25 PARAMS: rel_CTR=1
+R_R2         N00102 N00099  1.5k  
+R_R1         N00060 N00102  1.2k  
+R_R4         N00118 N00028  9.1k  
+R_R5         0 N00118  2k  
+R_R3         N00060 N00070  6.2k  
+V_V2         N00028 0 18Vdc
+V_V1         N00060 0 7.5Vdc
+C_C1         0 N00102  4.7u  
+
+**** RESUMING tl431-SCHEMATIC1-123.sim.cir ****
+.INC "tl431-SCHEMATIC1.als"
+
+
+
+**** INCLUDING tl431-SCHEMATIC1.als ****
+.ALIASES
+X_U1            U1(1=N00099 2=N00096 4=0 5=N00070 6=0 )
+R_R2            R2(1=N00102 2=N00099 )
+R_R1            R1(1=N00060 2=N00102 )
+R_R4            R4(1=N00118 2=N00028 )
+R_R5            R5(1=0 2=N00118 )
+R_R3            R3(1=N00060 2=N00070 )
+V_V2            V2(+=N00028 -=0 )
+V_V1            V1(+=N00060 -=0 )
+C_C1            C1(1=0 2=N00102 )
+.ENDALIASES
+
+**** RESUMING tl431-SCHEMATIC1-123.sim.cir ****
+.END
+
+**** 12/28/01 23:44:26 ********* PSpice 9.1 (Mar 1999) ******** ID# 0 ********
+
+ ** circuit file for profile: 123 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.MainLED    X_U1.PhotoLED   
+          IS   10.010000E-21    1.100000E-12 
+           N    1.053           1.9          
+         ISR   30.000000E-09   30.000000E-09 
+          NR    3.8             3.8          
+         IKF   11.84             .03         
+          BV    6                            
+         IBV  100.000000E-06                 
+          RS    2.049            .66         
+          TT  500.000000E-09                 
+         CJO   40.000000E-12                 
+          VJ     .75             .75         
+           M     .34             .34         
+
+
+**** 12/28/01 23:44:26 ********* PSpice 9.1 (Mar 1999) ******** ID# 0 ********
+
+ ** circuit file for profile: 123 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.PhotoBJT   
+               NPN             
+          IS   10.000000E-15 
+          BF  400            
+          NF    1            
+         VAF   60            
+         IKF     .26         
+         ISE  580.000000E-12 
+          NE    3.75         
+          BR     .04         
+          NR    1            
+         ISC    3.500000E-09 
+         CJE    2.500000E-12 
+         MJE     .3333       
+         CJC   10.000000E-12 
+         MJC     .3333       
+          TF    1.500000E-09 
+          TR   88.000000E-06 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 12/28/01 23:44:26 ********* PSpice 9.1 (Mar 1999) ******** ID# 0 ********
+
+ ** circuit file for profile: 123 
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.TempComp   
+           R    1            
+         TC1    -.01127      
+         TC2   43.460000E-06 
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+

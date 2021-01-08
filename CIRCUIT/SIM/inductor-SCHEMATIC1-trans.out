@@ -1,0 +1,110 @@
+
+**** 12/09/01 20:30:58 ********* PSpice 9.1 (Mar 1999) ******** ID# 0 ********
+
+ ** circuit file for profile: trans 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT PROFILES
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of pspice91.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ms 0 
+.PROBE 
+.INC "inductor-SCHEMATIC1.net" 
+
+
+**** INCLUDING inductor-SCHEMATIC1.net ****
+* source INDUCTOR
+V_V1         N00013 0  
++PULSE 0 42.75V 0 0.1us 0.1us 4.2us 10us
+X_D1         N00013 0 N00424 MBR3045PT
+L_L1         N00424 N00024  400uH  
+C_C1         N00024 0  100u  
+R_R1         0 N00024  100  
+
+**** RESUMING inductor-schematic1-trans.sim.cir ****
+.INC "inductor-SCHEMATIC1.als"
+
+
+
+**** INCLUDING inductor-SCHEMATIC1.als ****
+.ALIASES
+V_V1            V1(+=N00013 -=0 )
+X_D1            D1(1=N00013 2=0 3=N00424 )
+L_L1            L1(1=N00424 2=N00024 )
+C_C1            C1(+=N00024 -=0 )
+R_R1            R1(1=0 2=N00024 )
+.ENDALIASES
+
+**** RESUMING inductor-schematic1-trans.sim.cir ****
+.END
+
+**** 12/09/01 20:30:58 ********* PSpice 9.1 (Mar 1999) ******** ID# 0 ********
+
+ ** circuit file for profile: trans 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_D1.dx         
+          IS  489.000000E-09 
+         ISR    7.268000E-06 
+         IKF   80.79         
+          RS    7.299000E-03 
+         CJO    2.144000E-09 
+          VJ     .75         
+           M     .4923       
+         XTI    0            
+
+
+**** 12/09/01 20:30:58 ********* PSpice 9.1 (Mar 1999) ******** ID# 0 ********
+
+ ** circuit file for profile: trans 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00013)    0.0000 (N00024)-7.789E-21 (N00424)-7.789E-21 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         3.894E-23
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME          422.71
+

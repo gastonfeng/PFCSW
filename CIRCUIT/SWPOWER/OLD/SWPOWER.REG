@@ -1,0 +1,24 @@
+[Directory]
+DCC.SCH=Sch
+HVC.SCH=Sch
+main.Sch=Sch
+PFC.SCH=Sch
+
+[DCC.SCH]
+Editor Kind=Sch
+
+[HVC.SCH]
+Editor Kind=Sch
+
+[main.Sch]
+Editor Kind=Sch
+Attributes=131072
+
+[main.Sch Childlist]
+ChildCount=3
+Child1=PFC.SCH
+Child2=DCC.SCH
+Child3=HVC.SCH
+
+[PFC.SCH]
+Editor Kind=Sch

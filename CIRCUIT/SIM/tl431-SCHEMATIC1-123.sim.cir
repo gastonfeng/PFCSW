@@ -1,0 +1,18 @@
+** circuit file for profile: 123 
+
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT PROFILES
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of pspice91.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V2 10 21 0.1 
+.PROBE 
+.INC "tl431-SCHEMATIC1.net" 
+
+.INC "tl431-SCHEMATIC1.als"
+
+
+.END
